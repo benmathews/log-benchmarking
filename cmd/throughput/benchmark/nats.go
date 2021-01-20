@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/nats-io/go-nats"
-	"github.com/nats-io/go-nats-streaming"
+	"github.com/nats-io/nats.go"
+	"github.com/nats-io/stan.go"
 )
 
 type NATSBenchmark struct {

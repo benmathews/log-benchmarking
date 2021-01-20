@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/tylertreat/log-benchmarking/cmd/throughput/benchmark"
+	"github.com/benmathews/log-benchmarking/cmd/throughput/benchmark"
 )
 
 type Benchmark interface {

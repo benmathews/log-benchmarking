@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/tylertreat/bench"
-	"github.com/tylertreat/bench/requester"
+	"github.com/benmathews/bench"
+	"github.com/benmathews/bench/requester"
 )
 
 func main() {
@@ -47,7 +47,7 @@ func main() {
 func run(factory bench.RequesterFactory, rate, conns uint64, duration time.Duration,
 	output string) {
 
-	benchmark := bench.NewBenchmark(factory, rate, conns, duration)
+	benchmark := bench.NewBenchmark(factory, rate, conns, duration, 0)
 	summary, err := benchmark.Run()
 	if err != nil {
 		panic(err)
